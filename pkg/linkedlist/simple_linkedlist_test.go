@@ -24,3 +24,18 @@ func TestSimpleLinkedListInsert(t *testing.T) {
 		t.Errorf("Expected head value to be 1, got %v", list.Head.Value)
 	}
 }
+
+func TestNewDoublyLinkedList(t *testing.T) {
+	list := NewDoublyLinkedList()
+	if list == nil{
+		t.Error("NewDoublyLinkedList() should not return nil")
+	}
+	if list.Head != nil {
+		t.Error("New list should have nil head")
+	}
+	if list.Tail != nil {
+		t.Error("New list should have nil tail")
+	}
+}
+
+// TODO Test insert into doubly linked list
