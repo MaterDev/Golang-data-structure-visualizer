@@ -45,7 +45,6 @@ debug
 
 # Project-specific build outputs
 /bin/
-/pkg/
 
 # Go build and test cache
 .cache/
