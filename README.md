@@ -15,27 +15,6 @@ A Go package implementing the Factory Method pattern to visualize different type
 - Test coverage for all components
 - Command-line demo application
 
-## Project Structure
-
-```
-golang-data-structure-visualizer/
-├── cmd/
-│   └── visualizer/
-│       └── main.go
-├── pkg/
-│   ├── linkedlist/
-│   │   ├── linkedlist.go
-│   │   └── linkedlist_test.go
-│   └── visualizer/
-│       ├── visualizer.go
-│       ├── simple_visualizer.go
-│       ├── doubly_visualizer.go 
-│       ├── circular_visualizer.go
-│       ├── factory.go
-│       └── *_test.go
-└── go.mod
-```
-
 ## Installation
 
 ```bash
