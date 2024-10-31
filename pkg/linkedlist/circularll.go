@@ -21,9 +21,5 @@ func (l *CircularLinkedList) Insert(value interface{}) {
 		l.Head.Next = newNode 
 		// Make new node the head
 		l.Head = newNode
-
-		// newNode.Next = l.Head.Next
-		// l.Head.Next = newNode
-		// l.Head = newNode
 	}
 }
