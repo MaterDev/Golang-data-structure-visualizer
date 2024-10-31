@@ -28,8 +28,6 @@ func (v *CircularLinkedListVisualizer) Visualize(list interface{}) string {
 	// A slice of strings to hold the visualization text
 	var result []string
 
-	fmt.Printf("First Head of list: %v", circularList.Head.Value)
-
 	// Start traversing from head.Next
 	current := circularList.Head
 

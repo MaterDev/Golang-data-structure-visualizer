@@ -12,9 +12,13 @@ func NewSimpleLinkedListVisualizer() *SimpleLinkedListVisualizer {
 	return &SimpleLinkedListVisualizer{}
 }
 
-func (v *SimpleLinkedListVisualizer) Visualize(list *linkedlist.SimpleLinkedList) string {
+func (v *SimpleLinkedListVisualizer) Visualize(list interface{}) string {
+	simpleList, ok := list.(*linkedlist.SimpleLinkedList)
+	if !ok {
+		return "Error: Not a SimpleLinkedList"
+	}
 	var result []string
-	current := list.Head
+	current := simpleList.Head
 	for current != nil {
 		result = append(result, fmt.Sprintf("%v", current.Value))
 		current = current.Next
